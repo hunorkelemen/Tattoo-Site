@@ -1,4 +1,5 @@
 {
+  "homepage": "http://hunorkelemen.github.io/TattooPage",
   "name": "tattoo-app",
   "version": "0.1.0",
   "private": true,
@@ -11,12 +12,14 @@
     "react-dom": "^18.2.0",
     "react-icons": "^4.12.0",
     "react-photo-album": "^2.3.0",
-    "react-scripts": "5.0.1",
+    "react-scripts": "^3.0.1",
     "web-vitals": "^2.1.4",
     "yet-another-react-lightbox": "^3.15.6"
   },
   "scripts": {
     "start": "react-scripts start",
+    "predeply": "npm run build",
+    "deploy": "gh-pages -d build",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
@@ -40,7 +43,8 @@
     ]
   },
   "devDependencies": {
-    "gh": "^2.8.9",
+    "gh": "^1.11.14",
+    "gh-pages": "^6.1.0",
     "pages": "^0.0.16",
     "tailwindcss": "^3.3.6"
   }
